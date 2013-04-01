@@ -21,6 +21,7 @@ class CNotification extends CActiveModel {
      * @param CPerson $person
      */
     public function email(CPerson $person) {
+    	//создание объекта класса PHPMailer
         $mail = new PHPMailer();
         $mail->From = ADMIN_EMAIL;
         $mail->FromName = "Администрация портала АСУ УГАТУ";
